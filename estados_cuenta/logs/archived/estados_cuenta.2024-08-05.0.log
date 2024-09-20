@@ -1,0 +1,8 @@
+2024-08-05 23:22:26,639 ##  - [StartupInfoLogger.java:55] - Starting EstadosCuentaApplicationTests using Java 1.8.0_301 on APEREZH-VM with PID 503220 (started by aaperez in C:\Users\aaperez\Downloads\estados-cuenta)
+2024-08-05 23:22:27,370 ##  - [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2024-08-05 23:22:27,434 ##  - [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 23:23:06,275 ##  - [StartupInfoLogger.java:61] - Started EstadosCuentaApplicationTests in 44.334 seconds (JVM running for 61.072)
+2024-08-05 23:34:17,186 ##  - [StartupInfoLogger.java:55] - Starting EstadosCuentaApplicationTests using Java 1.8.0_301 on APEREZH-VM with PID 501160 (started by aaperez in C:\Users\aaperez\Downloads\estados-cuenta)
+2024-08-05 23:34:17,191 ##  - [StartupInfoLogger.java:56] - Running with Spring Boot v2.7.5, Spring v5.3.23
+2024-08-05 23:34:17,192 ##  - [SpringApplication.java:634] - No active profile set, falling back to 1 default profile: "default"
+2024-08-05 23:34:37,732 ##  - [StartupInfoLogger.java:61] - Started EstadosCuentaApplicationTests in 24.561 seconds (JVM running for 36.226)

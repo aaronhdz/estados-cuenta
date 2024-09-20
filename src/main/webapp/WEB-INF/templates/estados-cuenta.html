@@ -1,0 +1,88 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+<table style="font-family: Mulish, sans-serif; background: #ffffff; background-color: #fff; color: #333333;" width="650" cellspacing="0" cellpadding="0" border="0" align="center">
+    <tr style=" background: #16267E;background: linear-gradient(274deg, rgba(1,62,151,1) 0%, rgba(124,144,205,1) 27%, rgba(75,169,198,1) 68%, rgba(0,71,225,1) 98%);" cellspacing="0" cellpadding="0">
+        <td style="padding: 30px 0 30px 30px; text-align: left;color: #fff; font-size: 17pt;font-weight: 100;">
+            <img src="https://www.fincomun.com.mx/images/Logo_Fincomun_c.png" width="130" ><br>
+        </td>
+        <td style="text-align: right;color: #fff; font-size: 17pt;font-weight: 100; padding-right: 30px;">
+            <b>Estado de cuenta</b>        
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td colspan="2" style="text-align: left; padding: 50px 0 20px 80px; font-size: 15pt;">
+            Estimado <b style="font-weight: 800;"> <span th:text="${param1}">NOMBRE</span>,</b>
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td colspan="2" style="text-align: justify; padding: 10px 80px 20px 80px; font-size: 12pt;font-weight: 300;">
+            Te compartimos el estado de cuenta de tu crédito <span th:text="${param2}">CREDITO</span> correspondiente al periodo: <b><span th:text="${param3}">PERIODO</span>.</b> <br><br>
+            <div style="background-color: #72DEFD20; padding: 20px; ">
+                Por seguridad el documento se encuentra protegido con una contraseña que es tu RFC sin homoclave.
+            </div>
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255); border-bottom: 1px solid rgb(1,62,151);">
+        <td colspan="2" style="padding-top: 30px;">
+            <a th:href="@{${param4}}" target="_blank">
+                <div style="padding: 10px 0; margin: 0 10%; text-align: center; width: 80%; border-radius: 20px; background-color: #16267E; color: #ffffff;">
+                    Da clic aquí para descargar tu estado de cuenta</div></a>
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td colspan="2" style="padding-top: 40px;">
+            <hr style="width: 80%; border: 0.5px solid #e6e6e6;">
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td colspan="2" style="padding-top: 20px; text-align: center;">
+            <b >¿Tienes dudas?</b><br><br>
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td  style="padding-top: 20px; text-align: center; width: 50%;">
+            <a href="tel:5552001620" style="color: #333;"> 
+                <table width="80%" align="center" cellspacing="0" cellpadding="0">
+                    <tr style="background-color: #f7f5f5; height: 80px;">   
+                        <td style="width: 20%; text-align: center;"> <img src="https://www.fincomun.com.mx/images/iconos/telefono.png" width="23"> </td>
+                        <td style="width: 70%; text-align: left; font-size: 13px; padding: 0 10px 0 0; ">Llama al Centro de Atención <br> <b>55 5200 1620</b></td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+        <td style="padding-top: 20px; text-align: center; width: 50%;">
+            <a href="https://www.fincomun.com.mx/sucursales/index.php" style="color: #333;"> 
+                <table width="80%" align="center" cellspacing="0" cellpadding="0">
+                    <tr style="background-color: #f7f5f5; height: 80px;">       
+                        <td style="width: 20%; text-align: center;">
+                            <img src="https://www.fincomun.com.mx/images/iconos/ubicacion.png" width="23"></td>
+                        <td style="width: 70%; text-align: left; font-size: 13px; padding: 0 10px 0 0; ">Acude a una de nuestras <b>sucursales </b></td>
+                    </tr>
+                </table>
+            </a>
+        </td>
+    </tr>
+    <tr style="background: rgb(255, 255, 255);">
+        <td colspan="2" style="padding-top: 20px; text-align: center;"><br>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: justify; padding: 20px 0; font-size: 9pt;font-weight: 300; background: #16267E; background: linear-gradient(274deg, rgba(1,62,151,1) 0%, rgba(124,144,205,1) 27%, rgba(75,169,198,1) 68%, rgba(0,71,225,1) 98%);">
+            <div style="width: 20%; float: left; text-align: center; color: #ffffff;">
+                <img src="https://www.fincomun.com.mx/images/fin_comun.png"> 
+            </div>
+            <div style="width: 70%; float: left; color: #ffffff; text-align: center;">El archivo adjunto es generado por Fincomún, Servicios Financieros, S.A. de C.V. Sociedad Financiera Popular, su descarga es segura.<br><br>
+                No respondas a este mensaje, fue enviado por un sistema automático y no recibe respuestas.<br><br>
+                <a href="https://www.linkedin.com/company/fincomun/"> <img src="https://www.fincomun.com.mx/images/iconos/ico_linkedin.png" width="26"></a>&nbsp;
+                <a href="https://www.tiktok.com/@fincomunoficial?lang=es"> <img src="https://www.fincomun.com.mx/images/iconos/ico_tiktok.png" width="26"></a>&nbsp;
+                <a href="https://www.youtube.com/channel/UCXyWOeFRThOkz8VnMvPq03g"> <img src="https://www.fincomun.com.mx/images/iconos/ico_youtube.png" width="26"></a>&nbsp;
+                <a href="https://www.instagram.com/fincomunmx/?igshid=MzRlODBiNWFlZA%3D%3D"> <img src="https://www.fincomun.com.mx/images/iconos/ico_instagram.png" width="26"></a>&nbsp;
+                <a href="https://www.facebook.com/Fincomun/"> <img src="https://www.fincomun.com.mx/images/iconos/ico_facebook.png" width="26"></a>&nbsp;
+                <a href="https://x.com/FincomunMX?mx=2"> <img src="https://www.fincomun.com.mx/images/iconos/ico_x.png" width="26"></a>
+                <br><br>
+                <a href="https://www.fincomun.com.mx" style="color:#fff; font-weight: bold; font-size: 14px;">www.fincomun.com.mx</a>
+            </div>
+        </td>
+    </tr>
+</table>

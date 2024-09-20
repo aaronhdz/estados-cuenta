@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <property name="HOME_LOG" value="estados_cuenta/logs/estados_cuenta.log"/>
+    <appender name="FILE-ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${HOME_LOG}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>estados_cuenta/logs/archived/estados_cuenta.%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>20MB</maxFileSize>
+            <totalSizeCap>20GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date{ISO8601} ## %X{transaccion_id} - [%F:%L] - %msg%n</pattern>
+        </encoder>
+    </appender>
+    <logger name="com.fincomun" level="debug" additivity="false">
+        <appender-ref ref="FILE-ROLLING"/>
+    </logger>
+    <root level="error">
+        <appender-ref ref="FILE-ROLLING"/>
+    </root>
+</configuration>
